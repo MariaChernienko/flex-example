@@ -1,0 +1,75 @@
+
+$pink: rgb(172, 76, 76);
+$grey: rgb(51, 51, 51);
+$red: rgb(244, 15, 15);
+$orange: rgb(240, 190, 46);
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  align-items: flex-end;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  &:first-child {
+    width: 65%;
+  }
+}
+
+.item {
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  background-color: $orange;
+  height: 100px;
+  width: 100px;
+}
+
+.menu {
+  background-color: $red;
+  height: 100px;
+  flex-grow: 1;
+} 
+
+.news-feed {
+  background-color: $pink;
+  width: 100px;
+  height: 300px; 
+}
+
+.list-of-some-thing {
+  background-color: $orange;
+  height: 300px;
+  flex-grow: 1;
+}
+
+.footer {
+  background-color: $orange;
+  height: 150px;
+  flex-grow: 1;
+}
+
+.navigation {
+  background-color: $grey;
+  height: 450px;
+}
+
+.grid {
+  display: grid;
+
+}
